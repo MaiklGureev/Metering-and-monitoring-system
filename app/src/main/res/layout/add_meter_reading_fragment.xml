@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinerLayoutPreset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.controller.AddMeterReadingFragment">
+
+    <TextView
+        style="@style/TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meterReading" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="70"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:rowCount="9">
+
+        <TextView
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:text="Номер и адрес точки учёта"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:text="Состояние прибора учёта"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:text="Номер счётчика"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="20sp"
+            android:autoSizeTextType="uniform"
+            android:text="Показания"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox_isProblem"
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="3"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="20sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Сообщить о проблеме на точке учёта"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="3"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Примечания"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textField_problem_description"
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="3"
+            android:autoSizeTextType="uniform"
+            android:lines="3" />
+
+
+        <TextView
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="3"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Прикрепить фотографии"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            style="@style/GridStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_add_photo1"
+                style="@style/Button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_add_photo2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_add_photo3"
+                style="@style/Button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_list_of_addresses"
+            style="@style/GridStyleWeight2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="2"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeStepGranularity="15sp"
+            android:autoSizeTextType="uniform" />
+
+        <Spinner
+            android:id="@+id/spinner_list_of_meter_status"
+            style="@style/GridStyleWeight2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="2"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeStepGranularity="15sp"
+            android:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/textField_num_meter_reading"
+            style="@style/GridStyleWeight2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="2"
+            android:autoSizeTextType="uniform"
+            android:lines="1" />
+
+        <EditText
+            android:id="@+id/textField_meter_reading"
+            style="@style/GridStyleWeight2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="2"
+            android:layout_columnSpan="2"
+            android:autoSizeTextType="uniform"
+            android:lines="1" />
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/button_create_meter_reading"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createMeterPoint" />
+</LinearLayout>

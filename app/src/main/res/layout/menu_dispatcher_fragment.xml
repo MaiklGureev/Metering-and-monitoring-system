@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/LinerLayoutPreset"
+    tools:context=".ui.main.dispatcher.MenuDispatcherFragment">
+
+    <Button
+        android:id="@+id/button_add_meter_point"
+        style="@style/Button"
+        android:text="@string/addMeterPoint" />
+
+    <Button
+        android:id="@+id/button_add_info_message"
+        style="@style/Button"
+        android:text="@string/addInfoMessage" />
+
+    <Button
+        android:id="@+id/button_list_error_on_meter_points"
+        style="@style/Button"
+        android:text="@string/listErrorsOnMeterPoints" />
+
+    <Button
+        android:id="@+id/button_show_info_messages"
+        style="@style/Button"
+        android:text="@string/showInfoMessages" />
+
+    <Button
+        android:id="@+id/button_user_info"
+        style="@style/Button"
+        android:text="@string/userInfo" />
+
+    <Button
+        android:id="@+id/button_exit"
+        style="@style/Button"
+        android:text="@string/exit" />
+
+
+</LinearLayout>

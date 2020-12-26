@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383589598557",
+    "project_id": "metering-and-monitor-system",
+    "storage_bucket": "metering-and-monitor-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383589598557:android:7e92c47dab1995afcbd4b4",
+        "android_client_info": {
+          "package_name": "ru.gureev.meteringandmonitorsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383589598557-jsv1i793qfb6ie72lgb89l42homav2od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwAjyVuDA6qHTEMtqJ7eIFhhEY5HjtOHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383589598557-jsv1i793qfb6ie72lgb89l42homav2od.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

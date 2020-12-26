@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Metering and monitoring system</string>
+    <string name="listMeterPoints">Просмотр точек учёта</string>
+    <string name="addMeterReading">Создать запись о контрольном снятии показаний</string>
+    <string name="showInfoMessages">Просмотр информационной рассылки</string>
+    <string name="userInfo">Информация пользователя</string>
+    <string name="exit">Выйти</string>
+    <string name="listErrorsOnMeterPoints">Просмотр списка ошибок на точках учёта</string>
+    <string name="addMeterPoint">Добавить точку учёта</string>
+    <string name="addInfoMessage">Создать сообщение в информационную рассылку</string>
+    <string name="meterPoint">Точка учёта</string>
+    <string name="createMeterPoint">Добавить</string>
+    <string name="message">Сообщение</string>
+    <string name="enter">Войти</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логин</string>
+    <string name="authorization">Авторизация</string>
+    <string name="name">Имя:</string>
+    <string name="middleName">Отчество:</string>
+    <string name="surname">Фамилия:</string>
+    <string name="position">Должность:</string>
+    <string name="personalNumber">Личный номер:</string>
+    <string name="brigadeNumber">Номер бригады:</string>
+    <string name="departmentNumber">Номер отдела:</string>
+    <string name="meterReading">Контрольное снятие показаний</string>
+    <string name="wrongLoginOrPassword">Неверный логин или пароль.</string>
+    <string name="title">Заголовок</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinerLayoutPreset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.universal.UserInfoFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/TitleText"
+        android:text="@string/userInfo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_surname"
+        style="@style/SimpleText"
+        android:hint="@string/surname" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_name"
+        style="@style/SimpleText"
+        android:hint="@string/name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_middle_name"
+        style="@style/SimpleText"
+        android:hint="@string/middleName" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_position"
+        style="@style/SimpleText"
+        android:hint="@string/position" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_personal_number"
+        style="@style/SimpleText"
+        android:hint="@string/personalNumber" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_brigade_number"
+        style="@style/SimpleText"
+        android:hint="@string/brigadeNumber" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_department_number"
+        style="@style/SimpleText"
+        android:hint="@string/departmentNumber" />
+
+
+</LinearLayout>

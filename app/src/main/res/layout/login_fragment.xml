@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinerLayoutPreset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.LoginFragment">
+
+    <TextView
+        style="@style/TitleText"
+        android:layout_margin="10dp"
+        android:text="@string/authorization" />
+
+
+    <EditText
+        android:id="@+id/edit_text_login"
+        style="@style/EditText"
+        android:layout_margin="10dp"
+        android:hint="@string/login"
+        android:inputType="textEmailAddress"
+        android:text="gureev.nsk@gmail.com" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        style="@style/EditText"
+        android:layout_margin="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:text="000000" />
+
+    <Button
+        android:id="@+id/button_authorization"
+        style="@style/Button"
+        android:text="@string/enter" />
+
+
+</LinearLayout>

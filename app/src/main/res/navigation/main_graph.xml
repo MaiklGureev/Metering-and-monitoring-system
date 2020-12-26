@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/addMessageFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.dispatcher.AddMessageFragment"
+        android:label="add_message_fragment"
+        tools:layout="@layout/add_message_fragment" />
+    <fragment
+        android:id="@+id/addMeterReadingFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.controller.AddMeterReadingFragment"
+        android:label="add_meter_reading_fragment"
+        tools:layout="@layout/add_meter_reading_fragment" />
+    <fragment
+        android:id="@+id/addMeterPointFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.dispatcher.AddMeterPointFragment"
+        android:label="add_meter_point_fragment"
+        tools:layout="@layout/add_meter_point_fragment" />
+    <fragment
+        android:id="@+id/listErrorsOnMeterPointsFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.dispatcher.ListErrorsOnMeterPointsFragment"
+        android:label="list_errors_on_meter_points_fragment"
+        tools:layout="@layout/list_errors_on_meter_points_fragment" />
+    <fragment
+        android:id="@+id/listInfoMessagesFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.universal.ListInfoMessagesFragment"
+        android:label="list_info_messages_fragment"
+        tools:layout="@layout/list_info_messages_fragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            app:popUpTo="@+id/main_graph"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_loginFragment_to_menuDispatcherFragment"
+            app:destination="@id/menuDispatcherFragment" />
+        <action
+            app:popUpTo="@+id/main_graph"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_loginFragment_to_menuControllerFragment"
+            app:destination="@id/menuControllerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfo"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.universal.UserInfoFragment"
+        android:label="user_info_fragment"
+        tools:layout="@layout/user_info_fragment" />
+    <fragment
+        android:id="@+id/listMeterPointsFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.controller.ListMeterPointsFragment"
+        android:label="list_meter_points_fragment"
+        tools:layout="@layout/list_meter_points_fragment" />
+    <fragment
+        android:id="@+id/menuControllerFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.controller.MenuControllerFragment"
+        android:label="menu_controller_fragment"
+        tools:layout="@layout/menu_controller_fragment">
+        <action
+            android:id="@+id/action_menuControllerFragment_to_listMeterPointsFragment"
+            app:destination="@id/listMeterPointsFragment" />
+        <action
+            android:id="@+id/action_menuControllerFragment_to_listInfoMessagesFragment"
+            app:destination="@id/listInfoMessagesFragment" />
+        <action
+            android:id="@+id/action_menuControllerFragment_to_addMeterReadingFragment"
+            app:destination="@id/addMeterReadingFragment" />
+        <action
+            android:id="@+id/action_menuControllerFragment_to_userInfo"
+            app:destination="@id/userInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDispatcherFragment"
+        android:name="ru.gureev.meteringandmonitorsystem.ui.main.dispatcher.MenuDispatcherFragment"
+        android:label="menu_dispatcher_fragment"
+        tools:layout="@layout/menu_dispatcher_fragment">
+        <action
+            android:id="@+id/action_menuDispatcherFragment_to_listErrorsOnMeterPointsFragment"
+            app:destination="@id/listErrorsOnMeterPointsFragment" />
+        <action
+            android:id="@+id/action_menuDispatcherFragment_to_userInfo"
+            app:destination="@id/userInfo" />
+        <action
+            android:id="@+id/action_menuDispatcherFragment_to_addMessageFragment"
+            app:destination="@id/addMessageFragment" />
+        <action
+            android:id="@+id/action_menuDispatcherFragment_to_addMeterPointFragment"
+            app:destination="@id/addMeterPointFragment" />
+        <action
+            android:id="@+id/action_menuDispatcherFragment_to_listInfoMessagesFragment"
+            app:destination="@id/listInfoMessagesFragment" />
+    </fragment>
+</navigation>
